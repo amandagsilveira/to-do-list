@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Luxurious Roman', cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background: #ba3f66;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.wrapper .inputField {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.inputField input {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  background: #fff;
+  color: #f58cad;
+  font-size: medium;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+ }
+
+input::placeholder {
+  color: #ba3f66;
+}
+
+.inputField button {
+  position: relative;
+  width: 50px;
+  height: 45px;
+  background: #f58cad;
+  color: #fff;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.inputField button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList li {
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  color: #ba3f66;
+  background: white;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.todoList li span {
+  position: absolute;
+  right: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: #f58cad;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todoList li:hover span {
+  right: 0px;
+}
+
+.wrapper .footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.footer span {
+  color: white;
+}
+
+.footer button {
+  border: none;
+  outline: none;
+  background: #f58cad;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 10px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
